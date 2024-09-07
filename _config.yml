@@ -2,7 +2,7 @@
 title: Nithissh's Blog
 description: Just a guy who loves to learn things around
 url: "https://snithissh.github.io"
-baseurl: ""
+baseurl: "/blog-jekyll"
 
 # Build settings
 markdown: kramdown
