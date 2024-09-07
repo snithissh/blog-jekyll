@@ -1,0 +1,13 @@
+<!-- _layouts/year-archive.html -->
+---
+layout: default
+---
+<h1>{{ page.date | date: "%Y" }}</h1>
+<ul class="post-list">
+  {% for post in page.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>

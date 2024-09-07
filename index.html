@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>Latest Posts</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <div class="post-title-wrapper">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
+      </div>
+      <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
