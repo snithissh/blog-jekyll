@@ -6,9 +6,10 @@ date:   2024-03-02 21:39:54 +0530
 
 ## Initial Entry point
 
-| Access Key ID         | AKIARSCCN4A3WD4RO4P4                         |
-| --------------------- | -------------------------------------------- |
-| **Secret Access Key** | **Wv7hFnshIshgrDKFvlrclgImQNr0az/XgzjxK7QJ** |
+| Key Type          | Value                        |
+|-------------------|------------------------------|
+| Access Key ID     | AKIAIOSFODNN7EXAMPLE         |
+| Secret Access Key | wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY |
 
 ### Approach for the solution
 
