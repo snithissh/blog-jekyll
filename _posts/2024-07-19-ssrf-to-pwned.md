@@ -1,6 +1,11 @@
-# Initial Entry point
+---
+layout: post
+title:  "SSRF to Pwned"
+date:   2024-07-19 21:39:54 +0530
+---
 
-  
+
+# Initial Entry point
 
 As an initial entry point, we have been provided with the following details
 

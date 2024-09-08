@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Pillage Exposed RDS Instances"
+date:   2024-06-27 21:39:54 +0530
+---
+
 # Initial Entry
 
 The scenario here is in the backdrop of rising cybersecurity threats, with chatter on Telegram channels hinting at data dumps and Pastebin snippets exposing snippets of configurations, Huge Logistics is taking no chances. They’ve enlisted your team’s expertise to rigorously assess their cloud infrastructure. Armed with a list of IP addresses and endpoints, a lead emerged — an RDS endpoint: `exposed.cw9ow1llpfvz.eu-north-1.rds.amazonaws.com`. Your mission? Dive deep into this endpoint’s security, and identify any security issues before threat actors do.

@@ -1,6 +1,7 @@
 ---
-description: >-
-  You will learn how to enumerate the Account ID with the Access key you found during your assessment and later on we will address RDS database enumeration
+layout: post
+title:  "Leverage Leaked Credentials For Pwnage"
+date:   2024-06-24 21:39:54 +0530
 ---
 
 # Initial Entry
@@ -26,7 +27,7 @@ In the following repository, where they have been provided with `.env` file and
 
   
 
-![](../Files/lev1.png) 
+![]({{ site.baseurl }}/assets/images/lev1.png) 
 
   
 
@@ -47,7 +48,7 @@ In the same `.env`  file we also have database credentials with username as `jo
 
   
 
-![](../Files/lev2.png) 
+![]({{ site.baseurl }}/assets/images/lev2.png) 
 
   
 
@@ -55,7 +56,7 @@ Once we click on login and suprisingly the method worked out and logged in as a 
 
   
 
-![](../Files/lev3.png) 
+![]({{ site.baseurl }}/assets/images/lev3.png) 
   
 
 There are 4 secrets being stored over there and out of which two are interesting one is [employee-database-admin](https://us-east-1.console.aws.amazon.com/secretsmanager/secret?name=employee-database-admin&region=us-east-1) and [employee-database](https://us-east-1.console.aws.amazon.com/secretsmanager/secret?name=employee-database-admin&region=us-east-1) 
@@ -66,14 +67,14 @@ Accessing the [`employee-database-admin`](https://us-east-1.console.aws.amazon.c
 
   
 
-![](../Files/lev4.png) 
+![]({{ site.baseurl }}/assets/images/lev4.png) 
   
 
 But we can able to access [`employee-database`](https://us-east-1.console.aws.amazon.com/secretsmanager/secret?name=employee-database-admin&region=us-east-1) and retrieve the secrets like DB name, DB username and password.. Also the hostname 
 
   
 
-![](../Files/lev5.png)  
+![]({{ site.baseurl }}/assets/images/lev5.png)  
 
   
 

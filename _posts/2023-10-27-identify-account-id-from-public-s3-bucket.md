@@ -1,6 +1,7 @@
 ---
-description: >-
-  Simulation of identifying the Account IDs of AWS accounts through the public s3 bucket by exploiting the misconfiguration on s3 bucket's IAM policy
+layout: post
+title:  "Identify Account ID from a Public s3 Bucket"
+date:   2023-10-27 21:39:54 +0530
 ---
 
 # Initial Entry point 
@@ -43,7 +44,7 @@ With the following IP addresss `54.204.171.32`  we have an HTTP application whic
 
   
 
-![](../Files/identity-1.png)
+![]({{ site.baseurl }}/assets/images/identity-1.png)
 
   
 
@@ -156,7 +157,7 @@ Breaking down of the above command, we have same arn id with assuming a role cal
 Now in our AWS console, Go for the region as `us-east-1`  and sometimes you need to change it in console if you are like me where I’m from india it will be in `ap-southeast-1`
 
 
-![](../Files/identity-2.png)
+![]({{ site.baseurl }}/assets/images/identity-2.png)
 
   
 
@@ -164,4 +165,4 @@ In the EC2 service, we have a ability to look into the public snapshots ( Kind o
 
   
 
-![](../Files/identity-3.png)
+![]({{ site.baseurl }}/assets/images/identity-3.png)

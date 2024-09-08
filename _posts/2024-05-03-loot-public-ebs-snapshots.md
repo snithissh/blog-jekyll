@@ -1,6 +1,7 @@
 ---
-description: >-
-  Understanding on how we found the EBS snapshot which is publicly through IAM enumeration and we will learn how to exploit it
+layout: post
+title:  "Loot Public EBS Snapshots"
+date:   2024-05-03 21:39:54 +0530
 ---
 
 The scenario here is Huge Logistics, a titan in their industry, has invited you to simulate an "assume breach" scenario. They're handing you the keys to their kingdom - albeit, the basic AWS credentials of a fresh intern. Your mission, should you choose to accept it, is to navigate their intricate cloud maze, starting from this humble entry. Gain situational awareness, identify weak spots, and test the waters to see how far you can elevate your access. Can you navigate this digital labyrinth and prove that even the smallest breach can pose significant threats? The challenge is set. The game is on.
@@ -222,7 +223,7 @@ In order to exploit it, First we need to find whether the snapshot is publicly a
 
   
 
-![](../Files/ebs-1.png) 
+![]({{ site.baseurl }}/assets/images/ebs-1.png) 
 
   
 
@@ -230,7 +231,7 @@ Now click on the snapshot ID and once you go inside to view the details of the s
 
   
 
-![](../Files/ebs-2.png)  
+![]({{ site.baseurl }}/assets/images/ebs-2.png)  
 
   
 
@@ -238,7 +239,7 @@ Leave everything by default on Create volume menu and click on `Create Volume`
 
   
 
-![](../Files/ebs-3.png)  
+![]({{ site.baseurl }}/assets/images/ebs-3.png)  
 
   
 
@@ -246,7 +247,7 @@ We have successful created a volume tagged as `vol-07110836c25f97974` with the 
 
   
 
-![](../Files/ebs-4.png) 
+![]({{ site.baseurl }}/assets/images/ebs-4.png) 
 
   
 
@@ -256,7 +257,7 @@ Now we need to create an EC2 instance and attach the created volume to it.. Assu
 
   
 
-![](../Files/ebs-5.png)  
+![]({{ site.baseurl }}/assets/images/ebs-5.png)  
 
   
 
@@ -264,7 +265,7 @@ Assign the subnet in the availability zone which is `us-east-1a`  why are alloc
 
   
 
-![](../Files/ebs-6.png)    
+![]({{ site.baseurl }}/assets/images/ebs-6.png)    
 
   
 
@@ -272,7 +273,7 @@ Now we can attach the volume to ec2 instances through `Attach Volume`  where yo
 
   
 
-![](../Files/ebs-7.png)     
+![]({{ site.baseurl }}/assets/images/ebs-7.png)     
 
   
 

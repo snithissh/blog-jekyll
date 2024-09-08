@@ -1,6 +1,7 @@
 ---
-description: >-
-  Understanding the risks of public exposed organization's github repos 
+layout: post
+title:  "Hunt for Secrets in Github Repositories"
+date:   2024-01-07 21:39:54 +0530
 ---
 
 # Initial Entry Point
@@ -72,7 +73,7 @@ Suspecting the particular action, we can able to view the log using the command 
 
   
 
-![](../Files/gitleaks-1.png) 
+![]({{ site.baseurl }}/assets/images/gitleaks-1.png) 
 
   
 
@@ -146,7 +147,7 @@ Well, It doesn’t end here we can also look into file named `web_transcations.c
 
   
 
-![](../Files/gitleaks-2.png) 
+![]({{ site.baseurl }}/assets/images/gitleaks-2.png) 
   
 
   
@@ -159,7 +160,7 @@ We can use a tool called `trufflehog`  well In my case, I’m using MacOS where 
 
   
 
-![](../Files/gitleaks-3.png) 
+![]({{ site.baseurl }}/assets/images/gitleaks-3.png) 
 
 
   
@@ -168,7 +169,7 @@ Now run the following trufflehog git `https://github.com/huge-logistics/cargo-lo
 
   
 
-![](../Files/gitleaks-4.png) 
+![]({{ site.baseurl }}/assets/images/gitleaks-4.png) 
  
 
   

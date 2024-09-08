@@ -1,6 +1,7 @@
 ---
-description: >-
-    With only the account ID as an initial entry point, we can able to enumerate publicly available RDS snapshots and in this blog, we will discuss on how we were able to enumerate, exploit and dump the database
+layout: post
+title:  "Plunder Public RDS Snaphots"
+date:   2024-06-25 21:39:54 +0530
 ---
 
 # Scenario
@@ -36,7 +37,7 @@ Looking into the command output results, we can see that the RDS snapshot is hos
 
   
 
-![](../Files/plunder-1.png) 
+![]({{ site.baseurl }}/assets/images/plunder-1.png) 
 
   
 
@@ -44,7 +45,7 @@ Click on the snapshot name and once you move inside you will see `actions` tab 
 
   
 
-![](../Files/plunder-2.png) 
+![]({{ site.baseurl }}/assets/images/plunder-2.png) 
 
   
 
@@ -52,7 +53,7 @@ Now, we gonna setup the availability to `single db instances` and with identifi
 
   
 
-![](../Files/plunder-3.png) 
+![]({{ site.baseurl }}/assets/images/plunder-3.png) 
 
   
 
@@ -60,7 +61,7 @@ Further, we can opt to create a new VPC group named as `snappy-db-instance` and
 
   
 
-![](../Files/plunder-4.png) 
+![]({{ site.baseurl }}/assets/images/plunder-4.png) 
 
   
 
@@ -68,7 +69,7 @@ Awesome, Once you click on `Restore snapshot`  It will take sometime and spin u
 
   
 
-![](../Files/plunder-5.png) 
+![]({{ site.baseurl }}/assets/images/plunder-5.png) 
 
   
 
@@ -76,7 +77,7 @@ Now In order to connect the RDS instances with a EC2, we need to create a new EC
 
   
  
-![](../Files/plunder-6.png) 
+![]({{ site.baseurl }}/assets/images/plunder-6.png) 
 
   
 
@@ -84,7 +85,7 @@ We can go back to the RDS services and once after going inside, you will have op
 
   
 
-![](../Files/plunder-7.png) 
+![]({{ site.baseurl }}/assets/images/plunder-7.png) 
 
   
 
@@ -92,7 +93,7 @@ And you will recieve the following message to confirm that our connection is suc
 
   
 
-![](../Files/plunder-8.png) 
+![]({{ site.baseurl }}/assets/images/plunder-8.png) 
 
   
 
@@ -100,7 +101,7 @@ There is one catch here, well you know we have configured everything but one thi
 
   
 
-![](../Files/plunder-9.png) 
+![]({{ site.baseurl }}/assets/images/plunder-9.png) 
 
   
 
@@ -108,7 +109,7 @@ Once after click on the continue in the modification page, you will be faced wit
 
   
 
-![](../Files/plunder-10.png) 
+![]({{ site.baseurl }}/assets/images/plunder-10.png) 
 
   
 
@@ -116,7 +117,7 @@ In order to connect to the RDS endpoint we need few things, Firstly this instanc
 
   
 
-![](../Files/plunder-11.png) 
+![]({{ site.baseurl }}/assets/images/plunder-11.png) 
 
   
 
