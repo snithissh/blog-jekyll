@@ -28,13 +28,8 @@ When Visiting the Hidden EC2 instances from the source code , It gave me 403 For
 
 <div class="tenor-gif-embed" data-postid="14785562" data-share-method="host" data-aspect-ratio="1.66667" data-width="100%"><a href="https://tenor.com/view/4chan-404forbidden-403forbidden-404girl-anime-gif-14785562">4chan 404forbidden GIF</a>from <a href="https://tenor.com/search/4chan-gifs">4chan GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
-## Enumerate the 403
 
-To improve this for a blog section called "Enumerate the 403," here's a more refined version with better structure, clearer explanation, and engaging flow:
-
----
-
-### Enumerate the 403: Guess What?
+## Enumerate the 403: Guess What?
 
 Ever stumbled upon a **403 Forbidden** or **404 Not Found** error while browsing a webpage? It’s frustrating, right? But for a security enthusiast, these errors can be intriguing entry points. One common approach I use to investigate further is **Directory Fuzzing**—and in this case, I used **Dirsearch**, a popular tool for directory enumeration.
 
