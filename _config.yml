@@ -1,8 +1,8 @@
 # _config.yml
 title: Nithissh's Blog
 description: Just a guy who loves to learn things around
-url: "https://snithissh.github.io"
-baseurl: "/blog-jekyll"
+url: "https://blog.nithissh.xyz"
+baseurl: ""
 
 # Build settings
 markdown: kramdown

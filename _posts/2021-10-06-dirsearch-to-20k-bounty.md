@@ -64,9 +64,6 @@ This time, I struck gold: **/app/customer.csv** was discovered. Upon visiting th
 
 Opening the `customer.csv` file revealed something that should never be publicly accessible—**Personal Identifiable Information (PII)**, including **user credentials**, **credit card details**, and other sensitive customer information. 
 
-Here’s an improved conclusion for your blog:
-
----
 
 ## Conclusion
 
