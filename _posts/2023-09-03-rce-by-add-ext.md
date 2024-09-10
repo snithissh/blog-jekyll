@@ -2,6 +2,7 @@
 layout: post
 title:  "RCE on Application’s Tracking Admin Panel"
 date:   2023-09-03 21:39:54 +0530
+tags: bugbounty,rce
 ---
 
 In this blog post, we’ll explore some intriguing scenarios where the add extension functionality in a particular subdomain can be exploited to enable a Remote Code Execution vulnerability. The application in question is a tracking system that can monitor study hours, walking distance, and, if using the Android version, application usage levels. By delving into the specifics of this potential vulnerability and its potential impact, we hope to provide valuable insights for both developers and security professionals.
