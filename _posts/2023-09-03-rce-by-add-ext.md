@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Tale of Weird XSS into $100"
+title:  "RCE on Application’s Tracking Admin Panel"
 date:   2023-09-03 21:39:54 +0530
 ---
 
