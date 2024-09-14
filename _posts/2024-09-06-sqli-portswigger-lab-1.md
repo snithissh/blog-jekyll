@@ -1,5 +1,8 @@
-
-# SQL injection attack, querying the database type and version on MySQL and Microsoft
+---
+layout: post
+title:  "SQL injection attack, querying the database type and version on MySQL and Microsoft"
+date:   2024-09-06 21:39:54 +0530
+---
 
 ## Objective 
 

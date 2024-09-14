@@ -1,5 +1,9 @@
+---
+layout: post
+title:  "SQL injection UNION attack, retrieving multiple values in a single column"
+date:   2024-09-08 21:39:54 +0530
+---
 
-# SQL injection UNION attack, retrieving multiple values in a single column
 
 ## Objective 
 

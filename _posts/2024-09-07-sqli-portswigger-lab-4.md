@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "SQL injection UNION attack, retrieving data from other tables"
+date:   2024-09-07 21:39:54 +0530
+---
+
 
 # Objective 
 
