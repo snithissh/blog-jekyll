@@ -18,9 +18,7 @@ Same like the other labs we saw in SQL injection, The product category filter is
 
 ![]({{ site.baseurl }}/assets/images/sqli31.png)
 
-There are only two columns like the previous lab 
-
-![]({{ site.baseurl }}/assets/images/sqli32.png)
+There are only two columns.. Just like the previous lab 
 
 We were also able to write to both the columns as shown in the image where in the first column we replaced it `NULL` with `abc` and second column `NULL` with `def`
 
