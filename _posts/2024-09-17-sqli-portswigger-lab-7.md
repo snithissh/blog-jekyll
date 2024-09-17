@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SQL injection attack, listing the database contents on non-Oracle databases"
-date:   2024-09-17 21:39:54 +0530
+date:   2024-09-17 09:39:54 +0530
 ---
 
 ## Objective 
