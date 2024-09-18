@@ -3,7 +3,7 @@ layout: default
 title: About Me
 permalink: /about/
 ---
-# About Me
+
 # Hello, I'm Nithissh! 👋
 
 Welcome to my corner of the web! I'm a passionate **Security Engineer** hailing from Chennai, India. With over 4 years of experience in the realm of cybersecurity, I've honed my skills in Bug Bounty hunting, Code review, and Cloud security. Join me as I share my journey, insights, and the exciting projects that have shaped my career.
