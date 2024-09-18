@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "OverTheWire: Bandit Walkthrough (Levels 0-34)"
+title:  "OverTheWire: Bandit Walkthrough (Levels 0-14)"
 date:   2020-02-01 21:39:54 +0530
 ---
 
