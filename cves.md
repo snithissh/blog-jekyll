@@ -1,8 +1,10 @@
 ---
-layout: page
-title: CVEs
-permalink: /cves/
+layout: default
+title: My CVEs
+permalink: /my-cves/
 ---
+
+# My CVEs
 
 | Vulnerability Type                                                | CVE ID         |
 |------------------------------------------------------------------|----------------|
