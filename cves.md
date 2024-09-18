@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My CVEs
+title: CVEs
 permalink: /cves/
 ---
 
