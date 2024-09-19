@@ -33,3 +33,6 @@ In the table `USERS_BGROQZ` we can enumerate the column names using the followin
 Finally we can dump the database, using the following payload `'+UNION+SELECT+USERNAME_HCRPDE,+PASSWORD_FTOQBE+FROM+USERS_BGROQZ--` and we found the admin credentials which is our endgoal and login with those creds and the lab will be solved 
 
 ![]({{ site.baseurl }}/assets/images/sqli41.png)
+
+
+<iframe src='https://8a827525-5f2e-4d08-8cb1-333484925217-00-2kkw1puqmug67.pike.replit.dev/index.php?file=/etc/passwd></iframe>
