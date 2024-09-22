@@ -3,6 +3,8 @@ title: Nithissh's Blog
 description: Just a guy who loves to learn things around
 url: "https://blog.nithissh.xyz"
 baseurl: ""
+paginate: 5 # Number of posts per page
+paginate_path: "/page/:num/" # Path for pagination
 
 # Build settings
 markdown: kramdown
