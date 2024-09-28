@@ -29,7 +29,7 @@ After doing R&D about this specific XSS with an angular bracket and for example,
 
   
 
-Great, I've found the following payload somewhere on internet **{{constructor.constructor('alert(1)')()}}** where through constructor we can pop an alert and Entered the following payload on search and triggers an XSS and the lab is solved⁠
+Great, I've found the following payload somewhere on internet where through constructor we can pop an alert and Entered the following payload on search and triggers an XSS and the lab is solved⁠
 
   
 
