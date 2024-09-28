@@ -21,8 +21,7 @@ In this lab, we do have a search functionality and looking into the source of th
 
   
 
-After doing R&D about this specific XSS with an angular bracket and for example, In the search field entering the following payload `{{1 + 1}}`  
-results in `2`⁠
+After doing R&D about this specific XSS with an angular bracket and for example, In the search field entering the following payload `{{1 + 1}}` results in `2`⁠
 
   
 
@@ -30,7 +29,7 @@ results in `2`⁠
 
   
 
-Great, I've found the following payload somewhere on internet `{{constructor.constructor('alert(1)')()}}` where through constructor we can pop an alert and Entered the following payload on search and triggers an XSS and the lab is solved⁠
+Great, I've found the following payload somewhere on internet **{{constructor.constructor('alert(1)')()}}** where through constructor we can pop an alert and Entered the following payload on search and triggers an XSS and the lab is solved⁠
 
   
 
