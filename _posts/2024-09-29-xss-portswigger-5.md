@@ -12,9 +12,12 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-site
 
 ## Things to Remember 
 
-> To prevent the Academy platform being used to attack third parties, our firewall blocks interactions between the labs and arbitrary external systems. To solve the lab, you must use Burp Collaborator's default public server.
-> 
-> Some users will notice that there is an alternative solution to this lab that does not require Burp Collaborator. However, it is far less subtle than exfiltrating the cookie.
+<p>
+    To prevent the Academy platform from being used to attack third parties, our firewall blocks interactions between the labs and arbitrary external systems. To solve the lab, you must use <mark>Burp Collaborator’s default public server</mark>.
+</p>
+<p>
+    Some users will notice that there is an alternative solution to this lab that does not require Burp Collaborator. However, it is far less subtle than <mark>exfiltrating the cookie</mark>.
+</p>
 
   
 
