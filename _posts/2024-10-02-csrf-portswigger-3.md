@@ -9,25 +9,20 @@ date:   2024-10-01 09:39:54 +0530
 <!DOCTYPE html>
 <html lang="en">
 <body>
-
     <p>
         This lab's email change functionality is vulnerable to CSRF. It uses tokens to try to prevent CSRF attacks, 
         but they aren't integrated into the site's session handling system.
     </p>
-
     <p>
         To solve the lab, use your exploit server to host an HTML page that uses a CSRF attack to change the viewer's email address.
     </p>
-
     <p>
         You have two accounts on the application that you can use to help design your attack. The credentials are as follows:
     </p>
-
     <div class="credentials">
         <p><strong>wiener</strong>: peter</p>
         <p><strong>carlos</strong>: montoya</p>
     </div>
-
 </body>
 </html>
 
