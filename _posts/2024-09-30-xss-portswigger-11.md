@@ -42,4 +42,4 @@ Now entering the following payload `</script><img src=x onerror=alert(1)>` and
 
   
 
-![]({{ site.baseurl }}/assets/images/Pasted%20image%2020240408123346.png)
+![]({{ site.baseurl }}/assets/images/Pasted%20image%2020240408123346.png) 
