@@ -36,7 +36,7 @@ Then Copied the payload into Exploit server, `Stored -> View Exploit` that resul
 
 ![]({{ site.baseurl }}/assets/images/csrf-24.png)
 
-In order to bypass the check we can add the following the piece of code `<meta name="referrer" content="never">` into our POC 
+In order to bypass the check we can add the following the piece of code which will suppress the `Referrer` <meta name="referrer" content="never">` into our POC 
 
 ```html
 <html>
