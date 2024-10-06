@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSRF where token is tied to non-session cookie"
-date:   2024-10-06 09:39:54 +0530
+date:   2024-10-06 12:13:54 +0530
 ---
 
 ## Objective 
