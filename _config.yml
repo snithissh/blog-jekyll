@@ -28,7 +28,6 @@ jekyll-archives:
   permalinks:
     year: '/:year/'
 
-# Collections
 collections:
   tags:
     output: true
