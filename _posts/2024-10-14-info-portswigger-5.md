@@ -1,4 +1,10 @@
-# Source code disclosure via backup files
+---
+layout: post
+title:  "Source code disclosure via backup files"
+date:   2024-10-14 12:20:54 +0530
+---
+
+## Objective
 
   
 
@@ -14,7 +20,7 @@ Looking into page source doesn’t reveal anything but checking `/robots.txt` r
 
   
 
-![](../Files/image%208.png)  
+![]({{ site.baseurl }}/assets/images/image%208.png)  
 
   
 
@@ -22,7 +28,7 @@ Accessing the `/backup` folder shows there is file exists in index of directory
 
   
 
-![](../Files/image%209.png)  
+![]({{ site.baseurl }}/assets/images/image%209.png)  
 
   
 
@@ -32,7 +38,7 @@ Clicking the file and reveals full source code
 
   
 
-![](../Files/image%2010.png)  
+![]({{ site.baseurl }}/assets/images/image%2010.png)  
 
   
 
@@ -40,4 +46,4 @@ Just copy and paste the database password as a solution and submit to solve the 
 
   
 
-![](../Files/image%2011.png)
+![]({{ site.baseurl }}/assets/images/image%2011.png)

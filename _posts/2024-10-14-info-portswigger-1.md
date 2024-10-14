@@ -1,6 +1,10 @@
-# Authentication bypass via information disclosure
+---
+layout: post
+title:  "Authentication bypass via information disclosure"
+date:   2024-10-14 12:20:54 +0530
+---
 
-  
+## Objective 
 
 This lab's administration interface has an authentication bypass vulnerability, but it is impractical to exploit without knowledge of a custom HTTP header used by the front-end.
 
@@ -18,7 +22,7 @@ With the credentials I’ve which is `wiener:peter` and after login, I’ve not
 
   
 
-![](Files/image%203.png)  
+![]({{ site.baseurl }}/assets/images/image%203.png)  
 
   
 
@@ -26,7 +30,7 @@ Accessing the `/admin` shows that it is only accessible to the users available 
 
   
 
-![](../Files/image%204.png)  
+![]({{ site.baseurl }}/assets/images/image%204.png)  
 
   
 
@@ -34,7 +38,7 @@ When changing it from GET to TRACE reveals a new header `X-Custom-IP-Authorizati
 
   
 
-![](../Files/image%205.png)  
+![]({{ site.baseurl }}/assets/images/image%205.png)  
 
   
 
@@ -42,7 +46,7 @@ Now change the request to GET from TRACE and replace the new header called `X-C
 
   
 
-![](../Files/image%206.png)  
+![]({{ site.baseurl }}/assets/images/image%206.png)  
 
   
 
@@ -50,4 +54,4 @@ Opening the response in browser and delete the user carlos to solve the lab 
 
   
 
-![](../Files/image%207.png)
+![]({{ site.baseurl }}/assets/images/image%207.png)

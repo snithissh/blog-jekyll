@@ -20,7 +20,7 @@ After spinning the lab instance, you can view-source of the page and come really
 
   
 
-![](../Files/image%2012.png)  
+![]({{ site.baseurl }}/assets/images/image%2012.png)  
 
   
 
@@ -32,7 +32,7 @@ Opening the path which is `/cgi-bin/phpinfo.php` discloses the PHPinfo pages an
 
   
 
-![](../Files/image%2013.png)  
+![]({{ site.baseurl }}/assets/images/image%2013.png)  
 
   
 
@@ -40,4 +40,4 @@ Copy and pasted the value of `SECRET_KEY`  into the solution and lab is solved�
 
   
 
-![](../Files/image%2014.png)
+![]({{ site.baseurl }}/assets/images/image%2014.png)

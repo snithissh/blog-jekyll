@@ -1,6 +1,10 @@
-# Information disclosure in error messages
+---
+layout: post
+title:  "Information disclosure in error messages"
+date:   2024-10-14 12:20:54 +0530
+---
 
-  
+## Objective
 
 This lab's verbose error messages reveal that it is using a vulnerable version of a third-party framework. To solve the lab, obtain and submit the version number of this framework.
 
@@ -14,7 +18,7 @@ This is just regular ecommerce website where buy and checkout the products actua
 
   
 
-![](../Files/image%2015.png)  
+![]({{ site.baseurl }}/assets/images/image%2015.png)  
 
   
 
@@ -28,7 +32,7 @@ Now click on “View details” on any product and check the URI path which is `
 
   
 
-![](../Files/image%2016.png)  
+![]({{ site.baseurl }}/assets/images/image%2016.png)  
 
   
 
@@ -38,4 +42,4 @@ Pass `’`  at the end of the URI like `/product?productId=1’` and analyse t
 
   
 
-![](../Files/image%2017.png)
+![]({{ site.baseurl }}/assets/images/image%2017.png)

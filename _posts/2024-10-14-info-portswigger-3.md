@@ -1,4 +1,10 @@
-# Information disclosure in version control history
+---
+layout: post
+title:  "Information disclosure in version control history"
+date:   2024-10-14 12:20:54 +0530
+---
+
+## Objective
 
   
 
@@ -14,7 +20,7 @@ We found that `/.git`  directory is accessible over thr browser and can able to
 
   
 
-![](../Files/image.png)  
+![]({{ site.baseurl }}/assets/images/image.png)  
 
   
 
@@ -120,4 +126,4 @@ Now with the admin password we have, we will go to our login page with the usern
 
   
 
-![](../Files/image%202.png)
+![]({{ site.baseurl }}/assets/images/image%202.png)
