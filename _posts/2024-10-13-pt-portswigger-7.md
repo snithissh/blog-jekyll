@@ -24,7 +24,7 @@ In the previous labs, we usually saw that only filename parameter might pass alo
 
   
 
-![]({{ site.baseurl }}/assets/images/image%206.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%206.png)  
 
   
 
@@ -36,7 +36,7 @@ Intercepted the request in caido and traversed from `/var/www/images/../`  to `
 
   
 
-![]({{ site.baseurl }}/assets/images/image%207.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%207.png)  
 
   
 

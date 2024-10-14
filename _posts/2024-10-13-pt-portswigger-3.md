@@ -21,7 +21,7 @@ Same as those previous labs which we saw in [File path traversal, traversal sequ
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2011.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2011.png)  
 
   
 
@@ -29,7 +29,7 @@ When you keep traversing just like other labs where we used `../../etc/passwd` 
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2012.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2012.png)  
 
   
 
@@ -41,4 +41,4 @@ So the complete payload looks like `....//....//....//etc/passwd` and we got th
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2013.png)
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2013.png)

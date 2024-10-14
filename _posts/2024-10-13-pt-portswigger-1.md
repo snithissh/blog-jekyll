@@ -17,7 +17,7 @@ The lab looks like older ecommmerce website and that’s how the old flipkart an
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2017.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2017.png)  
 
   
 
@@ -25,7 +25,7 @@ Now open that particular image in new tab and intercept the request in caido 
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2018.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2018.png)  
 
   
 
@@ -41,7 +41,7 @@ For a single traverse, we did get an error that “No such file”
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2019.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2019.png)  
 
   
 

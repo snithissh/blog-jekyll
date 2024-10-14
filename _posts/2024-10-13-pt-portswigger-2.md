@@ -22,7 +22,7 @@ Same like the previous lab [File path traversal, simple case](File path traversa
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2014.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2014.png)  
 
   
 
@@ -30,7 +30,7 @@ When we keep on traverse, we didn’t receive anything because the lab blocks tr
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2015.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2015.png)  
 
   
 
@@ -38,4 +38,4 @@ But it allows absolute sequence meaning rather than traversing like `../../`  t
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2016.png)
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2016.png)

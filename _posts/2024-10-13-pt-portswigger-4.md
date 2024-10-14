@@ -23,7 +23,7 @@ In this lab we have the `filename`  parameter just like the other labs on what 
 
   
 
-![]({{ site.baseurl }}/assets/images/image%208.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%208.png)  
 
   
 
@@ -31,7 +31,7 @@ But when we can keep traversing, things don’t workout now where as the lab des
 
   
 
-![]({{ site.baseurl }}/assets/images/image%209.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%209.png)  
 
   
 
@@ -39,4 +39,4 @@ If the payload is URL encoded, then send it to the server and server will proces
 
   
 
-![]({{ site.baseurl }}/assets/images/image%2010.png)
+![]({{ site.baseurl }}/assets/images/path-traversal/image%2010.png)

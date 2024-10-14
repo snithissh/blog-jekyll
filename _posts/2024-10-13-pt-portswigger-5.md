@@ -22,13 +22,13 @@ Opening the image in new tab shows that just through a `filename`  parameter ge
 
   
 
-![]({{ site.baseurl }}/assets/images/image.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image.png)  
 
   
 
 When I keep on traversing through the filename parameter like gone from `../../`  to `../../../` and I still face the error **“No file found”**
 
-![]({{ site.baseurl }}/assets/images/image%202.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%202.png)  
 
   
 
@@ -36,7 +36,7 @@ But we remember right, In the lab description, It should end with suitable file 
 
   
 
-![]({{ site.baseurl }}/assets/images/image%203.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%203.png)  
 
   
 
@@ -44,7 +44,7 @@ But the lab header tells that it is null byte bypass ( `%00` ) and now when we p
 
   
 
-![]({{ site.baseurl }}/assets/images/image%204.png)  
+![]({{ site.baseurl }}/assets/images/path-traversal/image%204.png)  
 
   
 
@@ -52,4 +52,4 @@ Yuck, think off like what the other filename extension and placing `png` instea
 
   
 
-![]({{ site.baseurl }}/assets/images/image%205.png)
+![]({{ site.baseurl }}/assets/images/path-traversal/image%205.png)
