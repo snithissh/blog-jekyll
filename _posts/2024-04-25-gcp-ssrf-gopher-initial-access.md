@@ -27,15 +27,7 @@ With the IP Address, I’ve tried to access it directly and found that port 80 i
 
 ![]({{ site.baseurl }}/assets/images/ssrf.png) 
 
- 
 
-Exploring further, we also found a shop inside the website where we can buy, checkout and purchase 
-
- 
-
-![]({{ site.baseurl }}/assets/images/ssrf-1.png) 
-
- 
 
 But there is an interesting functionality where you can specify your profile from a remote URL which is an interesting place to start looking out for SSRF
 
