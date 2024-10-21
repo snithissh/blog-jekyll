@@ -17,7 +17,7 @@ This lab is vulnerable due to a logic flaw in its password brute-force protectio
 Last lab on the user enumeration via response timing. We saw we were brute forcing the IP address via a custom header called 'X-Forwarded-For'. This time, it won't work out (I tried it, and it didn't work out). Instead, what we can do is 
 
 So we have two different wordlists:
-- One is for the VNR, which will be repeated 20 times
+- One is for the wiener, which will be repeated 20 times
 - For the password wordlist, we have a custom wordlist where every word starts with 'peter' and every 3rd word will start with 'peter'
 
 When we are brute forcing it, if the 1st time the wiener and 'peter' are in the same position, it will be a match (it's 302) and the second time the brute force starts, so we were able to bypass the IP block production right? 
