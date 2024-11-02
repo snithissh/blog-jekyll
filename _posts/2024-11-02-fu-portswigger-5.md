@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Remote code execution via polyglot web shell upload"
-date:   2024-10-29 10:20:54 +0530
+date:   2024-11-02 10:20:54 +0530
 ---
 
 ## Objective 
@@ -40,6 +40,6 @@ And now, we've successfully bypassed the MagicBytes validation and uploaded the 
 
 ![]({{ site.baseurl }}/assets/images/fileupload/fu-19.png)
 
-Now open the avatar in a new tab and on the top of it, you will find a secret code. Submit it as a solution that solves a lot. 
+Now open the avatar in a new tab and on the top of it, you will find a secret code. Submit it as a solution that solves a lab. 
 
 ![]({{ site.baseurl }}/assets/images/fileupload/fu-20.png)
