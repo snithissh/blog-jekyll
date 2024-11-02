@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Web shell upload via obfuscated file extension"
+title:  "Remote code execution via polyglot web shell upload"
 date:   2024-10-29 10:20:54 +0530
 ---
 
