@@ -9,6 +9,16 @@
 </head>
 <body>
     {% include navigation.html %}
+    <header>
+        <div class="header-content">
+            <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        </div>
+        <nav>
+            <a href="{{ "/" | relative_url }}">Home</a>
+            <a href="{{ "/about/" | relative_url }}">About</a>
+            <a href="{{ "/archive/" | relative_url }}">Archive</a>
+        </nav>
+    </header>
     
     <main>
         {{ content }}
