@@ -1,76 +1,56 @@
-# _config.yml
 title: Nithissh's Blog
 description: Just a guy who loves to learn things around
-url: "https://blog.nithissh.xyz"
-baseurl: ""
-paginate: 5 # Number of posts per page
-paginate_path: "/page/:num/" # Path for pagination
-
-# Build settings
+url: https://blog.nithissh.xyz
+baseurl: ''
+paginate: 5
+paginate_path: /page/:num/
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 permalink: /:year/:month/:day/:title/
-
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-archives
-
-# Archives
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-archives
 jekyll-archives:
   enabled:
-    - year
+  - year
   layouts:
     year: year-archive
   permalinks:
-    year: '/:year/'
-
+    year: /:year/
 collections:
   tags:
     output: true
     permalink: /tags/:name/
-
-# Default front matter
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "tags"
-    values:
-      layout: "tag"
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-
-# File structure
-# .
-# ├── _includes
-# │   ├── head.html
-# │   ├── header.html
-# │   └── footer.html
-# ├── _layouts
-# │   ├── default.html
-# │   ├── post.html
-# │   ├── tag.html
-# │   └── year-archive.html
-# ├── _posts
-# │   └── 2024-09-05-welcome-to-my-blog.md
-# ├── _tags
-# ├── assets
-# │   └── css
-# │       └── main.scss
-# ├── about.md
-# ├── archive.html
-# ├── index.html
-# └── _config.yml
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: tags
+  values:
+    layout: tag
+- scope:
+    path: ''
+  values:
+    layout: default
+navigation:
+- title: Home
+  url: /
+- title: About Me
+  url: /about/
+- title: My CVEs
+  url: /my-cves/
+- title: Tags
+  url: /tags/
+- title: Archive
+  url: /archive/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
