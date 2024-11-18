@@ -28,48 +28,8 @@ layout: default
     </div>
   </div>
 
-  <div class="post-grid" id="postsContainer">
-    {% for post in site.posts %}
-    <div class="post-card" 
-         data-title="{{ post.title }}"
-         data-date="{{ post.date | date: '%Y-%m-%d' }}"
-         data-year="{{ post.date | date: '%Y' }}"
-         data-category="{{ post.categories | join: ',' }}">
-      {% if post.thumbnail %}
-      <div class="post-thumbnail">
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
-      </div>
-      {% endif %}
-      <div class="post-content">
-        <div class="post-meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-          <div class="post-categories">
-            {% for category in post.categories %}
-            <span class="category-tag">{{ category }}</span>
-            {% endfor %}
-          </div>
-        </div>
-        <h2 class="post-title">
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {% if post.excerpt %}
-        <div class="post-excerpt">
-          {{ post.excerpt | strip_html | truncatewords: 30 }}
-        </div>
-        {% endif %}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-  <div id="noResults" class="no-results" style="display: none;">
-    <div class="no-results-content">
-      <span class="no-results-icon">😕</span>
-      <h3>No posts found</h3>
-      <p>Try adjusting your search or filters</p>
-    </div>
+  <div id="searchResults" class="search-results">
+    <!-- Search results will be dynamically inserted here -->
   </div>
 </div>
 
@@ -119,75 +79,41 @@ body {
   color: #333;
 }
 
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+.search-results {
+  margin-top: 2rem;
 }
 
-.post-card {
+.search-result {
+  background-color: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
-  overflow: hidden;
+  padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  background-color: #fff;
 }
 
-.post-card:hover {
+.search-result:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.post-thumbnail img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.post-content {
-  padding: 1.5rem;
-}
-
-.post-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.post-categories {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.category-tag {
-  background-color: #f0f0f0;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  color: #666;
-}
-
-.post-title {
+.search-result-title {
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
   color: #333;
 }
 
-.post-title a {
+.search-result-title a {
   color: #333;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.post-title a:hover {
+.search-result-title a:hover {
   color: #000;
 }
 
-.post-excerpt {
+.search-result-excerpt {
   color: #666;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -218,10 +144,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const categoryFilter = document.getElementById('categoryFilter');
   const yearFilter = document.getElementById('yearFilter');
   const sortOrder = document.getElementById('sortOrder');
-  const postsContainer = document.getElementById('postsContainer');
-  const noResults = document.getElementById('noResults');
+  const searchResults = document.getElementById('searchResults');
+  const noResults = document.querySelector('.no-results');
 
-  const allPosts = Array.from(document.querySelectorAll('.post-card'));
+  const allPosts = Array.from(site.posts);
 
   function filterAndSortPosts() {
     const searchTerm = searchInput.value.toLowerCase();
@@ -230,9 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const sortType = sortOrder.value;
 
     const filteredPosts = allPosts.filter(post => {
-      const title = post.dataset.title.toLowerCase();
-      const category = post.dataset.category.toLowerCase();
-      const year = post.dataset.year;
+      const title = post.title.toLowerCase();
+      const category = post.categories.join(',').toLowerCase();
+      const year = new Date(post.date).getFullYear().toString();
       
       const matchesSearch = title.includes(searchTerm);
       const matchesCategory = !selectedCategory || category.includes(selectedCategory);
@@ -245,21 +171,33 @@ document.addEventListener('DOMContentLoaded', function() {
     filteredPosts.sort((a, b) => {
       switch(sortType) {
         case 'newest':
-          return new Date(b.dataset.date) - new Date(a.dataset.date);
+          return new Date(b.date) - new Date(a.date);
         case 'oldest':
-          return new Date(a.dataset.date) - new Date(b.dataset.date);
+          return new Date(a.date) - new Date(b.date);
         case 'title-asc':
-          return a.dataset.title.localeCompare(b.dataset.title);
+          return a.title.localeCompare(b.title);
         case 'title-desc':
-          return b.dataset.title.localeCompare(a.dataset.title);
+          return b.title.localeCompare(a.title);
         default:
           return 0;
       }
     });
 
     // Update UI
-    postsContainer.innerHTML = '';
-    filteredPosts.forEach(post => postsContainer.appendChild(post));
+    searchResults.innerHTML = '';
+    filteredPosts.forEach(post => {
+      const resultElement = document.createElement('div');
+      resultElement.classList.add('search-result');
+      resultElement.innerHTML = `
+        <h2 class="search-result-title">
+          <a href="${site.baseurl}${post.url}">${post.title}</a>
+        </h2>
+        <div class="search-result-excerpt">
+          ${post.excerpt ? post.excerpt.strip_html().truncatewords(30) : ''}
+        </div>
+      `;
+      searchResults.appendChild(resultElement);
+    });
     
     // Show/hide no results message
     noResults.style.display = filteredPosts.length === 0 ? 'block' : 'none';
