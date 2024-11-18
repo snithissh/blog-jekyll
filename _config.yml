@@ -13,6 +13,17 @@ plugins:
 - jekyll-feed
 - jekyll-sitemap
 - jekyll-archives
+- jekyll-pagination
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page:num/'
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 jekyll-archives:
   enabled:
   - year

@@ -1,14 +1,44 @@
 ---
 layout: default
+title: Blog Posts
+pagination:
+  enabled: true
 ---
 <h1>Latest Posts</h1>
+
 <ul class="post-list">
- {% for post in site.posts %}
-<li>
-<div class="post-title-wrapper">
-<a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
+{% for post in paginator.posts %}
+  <li>
+    <div class="post-title-wrapper">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">
+        {{ post.title }}
+      </a>
+    </div>
+    <span class="post-date">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </span>
+  </li>
+{% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | relative_url }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+  {% endif %}
 </div>
-<span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-</li>
- {% endfor %}
-</ul>"
+{% endif %}
