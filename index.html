@@ -3,6 +3,7 @@ layout: default
 title: Blog Posts
 pagination:
   enabled: true
+  per_page: 20
 ---
 <h1>Latest Posts</h1>
 
@@ -17,6 +18,11 @@ pagination:
     <span class="post-date">
       {{ post.date | date: "%B %-d, %Y" }}
     </span>
+    {% if post.excerpt %}
+    <p class="post-excerpt">
+      {{ post.excerpt | strip_html | truncatewords:30 }}
+    </p>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -24,12 +30,12 @@ pagination:
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="prev-page">Previous</a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <span class="current-page">{{ page }}</span>
     {% elsif page == 1 %}
       <a href="{{ '/index.html' | relative_url }}">{{ page }}</a>
     {% else %}
@@ -38,7 +44,7 @@ pagination:
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next</a>
   {% endif %}
 </div>
 {% endif %}
