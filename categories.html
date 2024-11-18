@@ -4,21 +4,98 @@ permalink: /categories/
 title: Categories
 ---
 
+<!-- Category count and search -->
+<div class="categories-header mb-8">
+  <p class="text-gray-600">
+    Total Categories: <span class="font-bold">{{ site.categories.size }}</span>
+  </p>
+  <input 
+    type="text" 
+    id="categorySearch" 
+    placeholder="Search categories..."
+    class="w-full p-2 mt-4 border rounded focus:outline-none focus:border-blue-500"
+    onkeyup="filterCategories()"
+  >
+</div>
 
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
+<!-- Categories index -->
+<div class="categories-index mb-8">
+  <h4 class="text-lg font-semibold mb-2">Jump to category:</h4>
+  <div class="flex flex-wrap gap-2">
+    {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+    <a href="#{{ category_name | slugize }}" 
+       class="category-link px-3 py-1 bg-gray-100 rounded hover:bg-gray-200 transition-colors">
+      {{ category_name }}
+      <span class="text-sm text-gray-500">({{ site.categories[category_name].size }})</span>
+    </a>
     {% endfor %}
   </div>
-{% endfor %}
 </div>
+
+<!-- Categories content -->
+<div id="archives" class="divide-y">
+  {% for category in site.categories %}
+  {% capture category_name %}{{ category | first }}{% endcapture %}
+  
+  <div class="archive-group py-6 category-section">
+    <div id="{{ category_name | slugize }}" class="anchor-offset"></div>
+    
+    <div class="flex items-center gap-2 mb-4">
+      <h3 class="category-head text-2xl font-bold">{{ category_name }}</h3>
+      <span class="text-sm text-gray-500">
+        ({{ site.categories[category_name].size }} posts)
+      </span>
+    </div>
+
+    <div class="grid gap-4">
+      {% for post in site.categories[category_name] %}
+      <article class="archive-item hover:bg-gray-50 p-4 rounded transition-colors">
+        <div class="flex justify-between items-start">
+          <h4 class="text-lg">
+            <a href="{{ site.baseurl }}{{ post.url }}" 
+               class="text-blue-600 hover:text-blue-800">
+              {{ post.title }}
+            </a>
+          </h4>
+          <time class="text-sm text-gray-500" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+        </div>
+        {% if post.excerpt %}
+        <p class="text-gray-600 mt-2 text-sm">
+          {{ post.excerpt | strip_html | truncatewords: 30 }}
+        </p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+.anchor-offset {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+</style>
+
+<script>
+function filterCategories() {
+  const searchInput = document.getElementById('categorySearch');
+  const filter = searchInput.value.toLowerCase();
+  const sections = document.getElementsByClassName('category-section');
+  
+  for (let section of sections) {
+    const categoryName = section.querySelector('.category-head').textContent.toLowerCase();
+    if (categoryName.includes(filter)) {
+      section.style.display = '';
+    } else {
+      section.style.display = 'none';
+    }
+  }
+}
+</script>
