@@ -2,6 +2,7 @@
 layout: post
 title:  "Blind SQL injection with conditional responses"
 date:   2024-09-22 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

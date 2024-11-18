@@ -2,6 +2,7 @@
 layout: post
 title:  "Leaked Database and SMTP credentials through .env file"
 date:   2023-10-09 21:39:54 +0530
+categories: Bugbounty
 ---
 
 ## Introduction

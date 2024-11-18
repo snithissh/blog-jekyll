@@ -2,6 +2,7 @@
 layout: post
 title:  "CSRF where token is duplicated in cookie"
 date:   2024-10-02 09:39:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

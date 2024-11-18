@@ -2,6 +2,7 @@
 layout: post
 title:  "A story of Default wordlist in Dirsearch to 20k INR Bounty"
 date:   2021-10-06 21:39:54 +0530
+categories: Bugbounty
 ---
 
 ## Introduction 

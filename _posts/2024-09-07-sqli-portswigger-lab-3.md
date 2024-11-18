@@ -2,6 +2,7 @@
 layout: post
 title:  "SQL injection UNION attack, determining the number of columns returned by the query"
 date:   2024-09-07 21:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

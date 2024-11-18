@@ -2,6 +2,7 @@
 layout: post
 title:  "A Tale of Weird XSS into $100"
 date:   2021-10-11 21:39:54 +0530
+categories: Bugbounty
 ---
 
 ## Introduction 

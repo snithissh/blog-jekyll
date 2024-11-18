@@ -2,6 +2,7 @@
 layout: post
 title:  "Hunt for Secrets in Github Repositories"
 date:   2024-01-07 21:39:54 +0530
+categories: CTFs
 ---
 
 # Initial Entry Point

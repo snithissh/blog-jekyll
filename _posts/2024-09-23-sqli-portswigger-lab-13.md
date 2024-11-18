@@ -2,6 +2,7 @@
 layout: post
 title:  "Blind SQL injection with time delays"
 date:   2024-09-23 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

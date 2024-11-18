@@ -2,6 +2,7 @@
 layout: post
 title:  "CSRF where Referer validation depends on header being present"
 date:   2024-10-03 09:39:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Loot Public EBS Snapshots"
 date:   2024-05-03 21:39:54 +0530
+categories: AWS
 ---
 
 The scenario here is Huge Logistics, a titan in their industry, has invited you to simulate an "assume breach" scenario. They're handing you the keys to their kingdom - albeit, the basic AWS credentials of a fresh intern. Your mission, should you choose to accept it, is to navigate their intricate cloud maze, starting from this humble entry. Gain situational awareness, identify weak spots, and test the waters to see how far you can elevate your access. Can you navigate this digital labyrinth and prove that even the smallest breach can pose significant threats? The challenge is set. The game is on.

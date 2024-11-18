@@ -2,6 +2,7 @@
 layout: post
 title:  "SQL injection vulnerability allowing login bypass"
 date:   2024-09-19 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

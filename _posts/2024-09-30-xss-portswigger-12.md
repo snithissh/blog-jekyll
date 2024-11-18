@@ -2,6 +2,7 @@
 layout: post
 title:  "Reflected XSS into a JavaScript string with Angle Brackets and HTML encoded"
 date:   2024-09-30 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
 
   

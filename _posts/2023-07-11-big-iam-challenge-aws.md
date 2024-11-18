@@ -2,6 +2,7 @@
 layout: post
 title:  "Big IAM Challenge - Wiz CTF Challenge"
 date:   2023-07-11 21:39:54 +0530
+categories: AWS
 ---
 
 # Introduction

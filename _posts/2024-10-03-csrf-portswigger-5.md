@@ -2,6 +2,7 @@
 layout: post
 title:  "SameSite Lax bypass via method override"
 date:   2024-10-03 09:39:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

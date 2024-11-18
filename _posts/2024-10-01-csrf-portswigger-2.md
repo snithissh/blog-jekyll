@@ -2,6 +2,7 @@
 layout: post
 title:  "CSRF where token validation depends on token being present"
 date:   2024-10-01 09:39:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Gandalf Lakera AI - Prompt Injection Challenge"
 date:   2024-06-07 21:39:54 +0530
+categories: CTFs
 ---
 
 

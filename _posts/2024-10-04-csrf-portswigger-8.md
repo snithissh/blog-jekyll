@@ -2,7 +2,7 @@
 layout: post
 title:  "CSRF with broken Referer validation"
 date:   2024-10-04 09:39:54 +0530
-categories: BSCP
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Leverage Leaked Credentials For Pwnage"
 date:   2024-06-24 21:39:54 +0530
+categories: AWS
 ---
 
 # Initial Entry

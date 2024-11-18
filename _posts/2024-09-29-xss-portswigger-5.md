@@ -2,6 +2,7 @@
 layout: post
 title:  "Exploiting cross-site scripting to steal cookies"
 date:   2024-09-29 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
 
 ## Initial Information

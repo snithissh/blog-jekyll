@@ -2,6 +2,7 @@
 layout: post
 title:  "Cozyhosting - HTB Walkthrough"
 date:   2024-03-02 21:39:54 +0530
+categories: CTF
 ---
 
 ## Introduction 

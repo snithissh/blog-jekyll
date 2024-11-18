@@ -2,6 +2,7 @@
 layout: post
 title:  "SameSite Strict bypass via sibling domain"
 date:   2024-10-13 12:20:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

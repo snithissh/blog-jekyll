@@ -2,6 +2,7 @@
 layout: post
 title:  "DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded"
 date:   2024-09-28 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
 
 

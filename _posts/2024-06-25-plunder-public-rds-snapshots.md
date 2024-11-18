@@ -2,6 +2,7 @@
 layout: post
 title:  "Plunder Public RDS Snaphots"
 date:   2024-06-25 21:39:54 +0530
+categories: AWS
 ---
 
 # Scenario

@@ -2,6 +2,7 @@
 layout: post
 title:  "SQL injection vulnerability in WHERE clause allowing retrieval of hidden data"
 date:   2024-09-19 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

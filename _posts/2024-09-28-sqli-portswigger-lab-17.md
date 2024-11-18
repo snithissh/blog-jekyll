@@ -2,6 +2,7 @@
 layout: post
 title:  "SQL injection with filter bypass via XML encoding"
 date:   2024-09-28 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

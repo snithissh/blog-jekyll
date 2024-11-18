@@ -2,6 +2,7 @@
 layout: post
 title:  "Reflected XSS into HTML context with most tags and attributes blocked"
 date:   2024-09-29 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
   
 

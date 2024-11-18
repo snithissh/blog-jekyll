@@ -2,6 +2,7 @@
 layout: post
 title:  "Analytics - HTB Walkthrough"
 date:   2024-03-23 21:39:54 +0530
+categories: CTFs
 ---
 
 ## Introduction

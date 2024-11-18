@@ -2,6 +2,7 @@
 layout: post
 title:  "SameSite Strict bypass via client-side redirect"
 date:   2024-10-06 12:20:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

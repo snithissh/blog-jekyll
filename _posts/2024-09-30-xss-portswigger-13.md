@@ -2,6 +2,7 @@
 layout: post
 title:  "Stored XSS into onclick event with angle brackets and double quotes HTML-encoded"
 date:   2024-09-30 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
 
 ## Intro

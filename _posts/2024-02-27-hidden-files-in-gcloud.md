@@ -2,6 +2,7 @@
 layout: post
 title:  "Reveal Hidden Files in Google Storage"
 date:   2024-05-26 21:39:54 +0530
+categories: GCP
 ---
 
 ## Initial entry point

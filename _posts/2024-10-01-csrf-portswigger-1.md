@@ -2,6 +2,7 @@
 layout: post
 title:  "CSRF where token validation depends on request method"
 date:   2024-10-01 09:39:54 +0530
+categories: [BSCP, CSRF]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "DOM Based XSS in document.write sink using source location.search inside a select element"
 date:   2024-09-28 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
 
 

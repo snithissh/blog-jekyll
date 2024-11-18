@@ -2,6 +2,7 @@
 layout: post
 title:  "OverTheWire: Bandit Walkthrough (Levels 0-14)"
 date:   2020-02-01 21:39:54 +0530
+categories: linux
 ---
 
 The Bandit wargame on OverTheWire is aimed at absolute beginners and teaches the basics of remote server access and Linux command line skills. This post will walk through the solutions for levels 0-34 of the game.

@@ -2,6 +2,7 @@
 layout: post
 title:  "Blind SQL injection with out-of-band data exfiltration"
 date:   2024-09-26 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

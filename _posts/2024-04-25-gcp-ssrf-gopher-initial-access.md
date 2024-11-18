@@ -2,6 +2,7 @@
 layout: post
 title:  "Exploit SSRF with Gopher for GCP Initial Access"
 date:   2024-05-26 21:39:54 +0530
+categories: GCP
 ---
 
 ## Scenario 

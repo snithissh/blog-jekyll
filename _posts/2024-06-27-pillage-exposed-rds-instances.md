@@ -2,6 +2,7 @@
 layout: post
 title:  "Pillage Exposed RDS Instances"
 date:   2024-06-27 21:39:54 +0530
+categories: AWS
 ---
 
 # Initial Entry

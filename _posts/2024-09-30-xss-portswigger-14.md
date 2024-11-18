@@ -2,6 +2,7 @@
 layout: post
 title:  "Reflected XSS into a template literal with angle brackets, single, double quotes"
 date:   2024-09-30 09:39:54 +0530
+categories: [BSCP, XSS]
 ---
 
 ## Intro

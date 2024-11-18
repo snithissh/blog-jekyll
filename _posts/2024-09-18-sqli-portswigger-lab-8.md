@@ -2,6 +2,7 @@
 layout: post
 title:  "SQL injection attack, listing the database contents on Oracle"
 date:   2024-09-18 09:39:54 +0530
+categories: [BSCP, SQLi]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Identify Account ID from a Public s3 Bucket"
 date:   2023-10-27 21:39:54 +0530
+categories: AWS
 ---
 
 # Initial Entry point 
