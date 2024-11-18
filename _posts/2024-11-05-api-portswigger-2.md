@@ -2,6 +2,7 @@
 layout: post
 title:  "Finding and exploiting an unused API endpoint"
 date:   2024-11-05 10:20:54 +0530
+categories: [BSCP, API Vulnerabilities]
 ---
 
 ## Objective 

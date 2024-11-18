@@ -2,6 +2,7 @@
 layout: post
 title:  "Username enumeration via subtly different responses"
 date:   2024-10-17 10:20:54 +0530
+categories: [BSCP, Authentication]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Web shell upload via extension blacklist bypass"
 date:   2024-10-29 10:20:54 +0530
+categories: [BSCP, File Upload Vulnerabilities]
 ---
 
 ## Objective 

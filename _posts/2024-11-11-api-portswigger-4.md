@@ -2,6 +2,7 @@
 layout: post
 title:  "Exploiting a mass assignment vulnerability"
 date:   2024-11-11 10:20:54 +0530
+categories: [BSCP, API Vulnerabilities]
 ---
 
 ## Objective 

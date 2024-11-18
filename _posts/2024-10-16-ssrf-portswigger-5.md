@@ -2,6 +2,7 @@
 layout: post
 title:  "SSRF with filter bypass via open redirection vulnerability"
 date:   2024-10-16 11:20:54 +0530
+categories: [BSCP, SSRF]
 ---
 
 ## Introduction

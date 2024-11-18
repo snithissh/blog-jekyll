@@ -2,6 +2,7 @@
 layout: post
 title:  "Remote code execution via polyglot web shell upload"
 date:   2024-11-02 10:20:54 +0530
+categories: [BSCP, File Upload Vulnerabilities]
 ---
 
 ## Objective 

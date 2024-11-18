@@ -2,6 +2,7 @@
 layout: post
 title:  "File path traversal, validation of file extension with null byte bypass"
 date:   2024-10-13 12:20:54 +0530
+categories: [BSCP, Path Traversal]
 ---
 
 # Objective

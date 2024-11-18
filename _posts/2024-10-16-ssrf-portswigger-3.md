@@ -2,6 +2,7 @@
 layout: post
 title:  "Blind SSRF with out-of-band detection"
 date:   2024-10-16 11:20:54 +0530
+categories: [BSCP, SSRF]
 ---
 
 ## Introduction 

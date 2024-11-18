@@ -2,6 +2,7 @@
 layout: post
 title:  "File path traversal, traversal sequences blocked with absolute path bypass"
 date:   2024-10-13 12:20:54 +0530
+categories: [BSCP, Path Traversal]
 ---
 
   

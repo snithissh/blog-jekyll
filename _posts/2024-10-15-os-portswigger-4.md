@@ -2,6 +2,7 @@
 layout: post
 title:  "Blind OS command injection with out-of-band interaction"
 date:   2024-10-15 11:20:54 +0530
+categories: [BSCP, Command Injection]
 ---
 
 ## Objective 

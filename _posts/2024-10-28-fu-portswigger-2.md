@@ -2,6 +2,7 @@
 layout: post
 title:  "Web shell upload via path traversal"
 date:   2024-10-28 10:20:54 +0530
+categories: [BSCP, File Upload Vulnerabilities]
 ---
 
 ## Objective 

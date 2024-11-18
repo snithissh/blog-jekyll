@@ -2,6 +2,7 @@
 layout: post
 title:  "Brute-forcing a stay-logged-in cookie"
 date:   2024-10-23 10:20:54 +0530
+categories: [BSCP, Authentication]
 ---
 
 ## Objective 

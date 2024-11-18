@@ -2,6 +2,7 @@
 layout: post
 title:  "OS command injection, simple case"
 date:   2024-10-14 12:20:54 +0530
+categories: [BSCP, Command Injection]
 ---
 
 ## Objective 

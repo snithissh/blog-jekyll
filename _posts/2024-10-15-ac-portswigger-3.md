@@ -2,6 +2,7 @@
 layout: post
 title:  "Multi-step process with no access control on one step"
 date:   2024-10-15 12:20:54 +0530
+categories: [BSCP, Access Control]
 ---
 
 ## Introduction 

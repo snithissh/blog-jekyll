@@ -2,6 +2,7 @@
 layout: post
 title:  "Information disclosure in version control history"
 date:   2024-10-14 12:20:54 +0530
+categories: [BSCP, Information disclosure]
 ---
 
 ## Objective

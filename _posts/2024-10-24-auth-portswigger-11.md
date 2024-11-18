@@ -2,6 +2,7 @@
 layout: post
 title:  "Password reset poisoning via middleware"
 date:   2024-10-24 10:20:54 +0530
+categories: [BSCP, Authentication]
 ---
 
 ## Objective 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Blind OS command injection with time delays"
 date:   2024-10-14 12:20:54 +0530
+categories: [BSCP, Command Injection]
 ---
 
 ## Objective 

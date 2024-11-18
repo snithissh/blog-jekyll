@@ -2,6 +2,7 @@
 layout: post
 title:  "Exploiting server-side parameter pollution in a query string"
 date:   2024-11-11 10:20:54 +0530
+categories: [BSCP, API Vulnerabilities]
 ---
 
 ## Objective 

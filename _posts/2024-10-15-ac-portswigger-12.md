@@ -2,6 +2,7 @@
 layout: post
 title:  "User role can be modified in user profile"
 date:   2024-10-15 12:20:54 +0530
+categories: [BSCP, Access Control]
 ---
 
 ## Introduction

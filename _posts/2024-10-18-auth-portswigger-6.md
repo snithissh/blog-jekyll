@@ -2,6 +2,7 @@
 layout: post
 title:  "Broken brute-force protection, IP block"
 date:   2024-10-18 10:20:54 +0530
+categories: [BSCP, Authentication]
 ---
 
 ## Objective 

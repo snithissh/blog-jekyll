@@ -2,6 +2,7 @@
 layout: post
 title:  "CORS vulnerability with trusted null origin"
 date:   2024-10-16 11:20:54 +0530
+categories: [BSCP, CORS]
 ---
 
 ## Introduction 

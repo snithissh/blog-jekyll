@@ -2,6 +2,7 @@
 layout: post
 title:  "Basic SSRF against the local server"
 date:   2024-10-16 11:20:54 +0530
+categories: [BSCP, SSRF]
 ---
 
 ## Introduction 

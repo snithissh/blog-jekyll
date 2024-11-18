@@ -2,6 +2,7 @@
 layout: post
 title:  "Exploiting an API endpoint using documentation"
 date:   2024-11-04 10:20:54 +0530
+categories: [BSCP, API Vulnerabilities]
 ---
 
 ## Objective 

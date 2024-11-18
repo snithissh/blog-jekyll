@@ -2,6 +2,7 @@
 layout: post
 title:  "Web shell upload via Content-Type restriction bypass"
 date:   2024-11-02 10:20:54 +0530
+categories: [BSCP, File Upload Vulnerabilities]
 ---
 
 ## Objective 

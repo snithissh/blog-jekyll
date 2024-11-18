@@ -2,6 +2,7 @@
 layout: post
 title:  "User ID controlled by request parameter with password disclosure"
 date:   2024-10-15 12:20:54 +0530
+categories: [BSCP, Access Control]
 ---
 
 ## Introduction
