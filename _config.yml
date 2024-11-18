@@ -46,8 +46,6 @@ navigation:
   url: /about/
 - title: My CVEs
   url: /my-cves/
-- title: Tags
-  url: /tags/
 - title: Archive
   url: /archive/
 - title: Categories
