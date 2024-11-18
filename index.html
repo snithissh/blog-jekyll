@@ -1,50 +1,14 @@
 ---
 layout: default
-title: Blog Posts
-pagination:
-  enabled: true
-  per_page: 20
 ---
 <h1>Latest Posts</h1>
-
 <ul class="post-list">
-{% for post in paginator.posts %}
-  <li>
-    <div class="post-title-wrapper">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">
-        {{ post.title }}
-      </a>
-    </div>
-    <span class="post-date">
-      {{ post.date | date: "%B %-d, %Y" }}
-    </span>
-    {% if post.excerpt %}
-    <p class="post-excerpt">
-      {{ post.excerpt | strip_html | truncatewords:30 }}
-    </p>
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
-
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="prev-page">Previous</a>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="current-page">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a href="{{ '/index.html' | relative_url }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next</a>
-  {% endif %}
+ {% for post in site.posts %}
+<li>
+<div class="post-title-wrapper">
+<a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
 </div>
-{% endif %}
+<span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+</li>
+ {% endfor %}
+</ul>"
