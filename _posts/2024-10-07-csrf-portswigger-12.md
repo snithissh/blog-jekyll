@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSRF vulnerability with no defenses"
-date:   2024-10-13 12:20:54 +0530
+date:   2024-10-13 12:21:54 +0530
 categories: [BSCP, CSRF]
 ---
 
