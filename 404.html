@@ -3,23 +3,280 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
+<div class="error-container">
+  <div class="error-code">4<span class="zero-container"><div class="hungry-face">○</div></span>4</div>
+  
+  <div class="error-message">
+    <h1 class="glitch-text" data-text="OOPS! PAGE NOT FOUND">OOPS! PAGE NOT FOUND</h1>
+    <p class="funny-subtitle">Looks like this page went on vacation without telling us! 🏖️</p>
+  </div>
+
+  <div class="funny-messages">
+    <p class="message-rotate"></p>
+  </div>
+
+  <div class="space-scene">
+    <div class="astronaut">
+      <div class="astronaut-body">👨‍🚀</div>
+      <div class="speech-bubble">Houston, we have a 404!</div>
+    </div>
+    <div class="planet">🌍</div>
+  </div>
+
+  <div class="action-buttons">
+    <button onclick="window.location.href='/'" class="home-button">
+      Take Me Home 🏠
+    </button>
+    <button onclick="tryAgain()" class="retry-button">
+      Try Something Funnier 😄
+    </button>
+  </div>
+</div>
+
+<style>
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes nom {
+  0% { content: "○"; }
+  50% { content: "◐"; }
+  100% { content: "●"; }
+}
+
+.error-container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.error-code {
+  font-size: 120px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 20px 0;
+  position: relative;
+}
+
+.zero-container {
+  display: inline-block;
+  animation: spin 8s infinite linear;
+}
+
+.hungry-face {
+  display: inline-block;
+  font-size: 100px;
+  animation: nom 1s infinite;
+}
+
+.glitch-text {
+  position: relative;
+  font-size: 36px;
+  color: #e74c3c;
+  animation: glitch 3s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  color: #3498db;
+  z-index: -1;
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch 3s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  color: #2ecc71;
+  z-index: -2;
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch 2.5s infinite linear alternate-reverse;
+}
+
+.funny-subtitle {
+  font-size: 24px;
+  color: #7f8c8d;
+  margin: 20px 0;
+}
+
+.funny-messages {
+  min-height: 50px;
+  margin: 20px 0;
+}
+
+.message-rotate {
+  font-size: 18px;
+  color: #34495e;
+  font-style: italic;
+}
+
+.space-scene {
+  position: relative;
+  height: 200px;
+  margin: 40px 0;
+}
+
+.astronaut {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 4s infinite ease-in-out;
+}
+
+.astronaut-body {
+  font-size: 60px;
+}
+
+.speech-bubble {
+  position: absolute;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  width: max-content;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+}
+
+.planet {
+  font-size: 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.action-buttons {
+  margin-top: 40px;
+}
+
+.action-buttons button {
+  padding: 15px 30px;
+  margin: 0 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-button {
+  background: #3498db;
+  color: white;
+}
+
+.retry-button {
+  background: #2ecc71;
+  color: white;
+}
+
+.action-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+  .error-code {
+    font-size: 80px;
+  }
+  
+  .glitch-text {
+    font-size: 24px;
+  }
+  
+  .action-buttons button {
+    display: block;
     margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+    width: 80%;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+}
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<script>
+const funnyMessages = [
+  "Maybe the page is playing hide and seek... and it's winning! 🙈",
+  "This page has gone to find itself. Please try again later. 🔍",
+  "Error 404: Page went to grab coffee, be back never ☕",
+  "Whoops! You found our secret page about nothing! 🎉",
+  "Plot twist: This IS the page you're looking for! (just kidding) 🎭",
+  "The page was last seen chasing butterflies 🦋",
+  "404: Page got stuck in traffic on the information highway 🚗",
+  "This page is exploring parallel universes right now 🌌",
+  "Page not found: It's probably binge-watching Netflix 📺",
+  "The page you requested is currently attending a yoga retreat 🧘‍♂️"
+];
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+let lastIndex = -1;
+function getRandomMessage() {
+  let newIndex;
+  do {
+    newIndex = Math.floor(Math.random() * funnyMessages.length);
+  } while (newIndex === lastIndex);
+  lastIndex = newIndex;
+  return funnyMessages[newIndex];
+}
+
+function updateMessage() {
+  const messageElement = document.querySelector('.message-rotate');
+  messageElement.style.opacity = 0;
+  setTimeout(() => {
+    messageElement.textContent = getRandomMessage();
+    messageElement.style.opacity = 1;
+  }, 200);
+}
+
+function tryAgain() {
+  updateMessage();
+  const astronaut = document.querySelector('.astronaut');
+  astronaut.style.animation = 'none';
+  astronaut.offsetHeight; // Trigger reflow
+  astronaut.style.animation = 'float 4s infinite ease-in-out';
+}
+
+// Initial message
+updateMessage();
+
+// Easter egg: Click the astronaut
+document.querySelector('.astronaut').addEventListener('click', function() {
+  this.style.transform = 'translateX(-50%) rotate(360deg)';
+  setTimeout(() => {
+    this.style.transform = 'translateX(-50%) rotate(0deg)';
+  }, 1000);
+});
+</script>
