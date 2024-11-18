@@ -53,8 +53,6 @@ defaults:
 navigation:
 - title: Home
   url: /
-- title: About Me
-  url: /about/
 - title: My CVEs
   url: /my-cves/
 - title: Archive
