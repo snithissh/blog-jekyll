@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DOM XSS using web messages and JSON.parse"
+title:  "DOM-based open redirection"
 date:   2024-11-19 10:20:54 +0530
 categories: [BSCP, DOM Based]
 ---
