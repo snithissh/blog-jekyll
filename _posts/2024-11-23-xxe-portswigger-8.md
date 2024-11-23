@@ -35,8 +35,8 @@ Last time, we provided an external collaborator and got the response through tha
 
 Now send the request with payload, observing the response with the contents of `/etc/passwd` which as expected 
 
-![]({{ site.baseurl }}/assets/images/xxe/xxe-24.png)
+![]({{ site.baseurl }}/assets/images/xxe/xxe-25.png)
 
 And the lab is solved..
 
-![]({{ site.baseurl }}/assets/images/xxe/xxe-25.png)
+![]({{ site.baseurl }}/assets/images/xxe/xxe-24.png)
