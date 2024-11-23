@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exploiting blind XXE to exfiltrate data using a malicious external DTD"
+title:  "Exploiting blind XXE to retrieve data via error messages"
 date:   2024-11-23 10:20:54 +0530
 categories: [BSCP, XXE]
 ---
