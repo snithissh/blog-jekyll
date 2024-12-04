@@ -35,7 +35,13 @@ Noow through `blog-post-author-display` parameter we can pass the following payl
 
 And that confirms, that's an SSTI right 
 
-Ok, in order to solve the lab.. we need to delete a file which is `/home/carlos/morale.txt` and we can construct a payload like **{% import os %}{{os.system('rm /home/carlos/morale.txt')}}** which will os library and executes the system command here to delete the file and send the request..
+Ok, in order to solve the lab.. we need to delete a file which is `/home/carlos/morale.txt` and we can construct a payload like 
+
+```python
+{% import os %}{{os.system('rm /home/carlos/morale.txt')}}
+```
+
+which will use os library and executes the system command here to delete the file and send the request..
 
 Refresh the blog post and that solves the lab 
 
