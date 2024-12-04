@@ -15,6 +15,9 @@ plugins:
 - jekyll-archives
 - jekyll-pagination
 
+liquid:
+  error_mode: lax
+
 pagination:
   enabled: true
   per_page: 10
