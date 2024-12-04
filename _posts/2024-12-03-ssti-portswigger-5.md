@@ -21,7 +21,7 @@ Ah, Error response shows that we are using `django`
 
 ![]({{ site.baseurl }}/assets/images/ssti/ssti-15.png)
 
-Normally, the secret key for django exists under settings and in order to get that value, we can use the following payload `{{settings.SECRET_KEY}}` which will reveal the secret key value of framework 
+Normally, the secret key for django exists under settings and in order to get that value, we can use the following payload `{% raw %}{{settings.SECRET_KEY}}{% endraw %}` which will reveal the secret key value of framework 
 
 ![]({{ site.baseurl }}/assets/images/ssti/ssti-16.png)
 
