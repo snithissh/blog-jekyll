@@ -31,7 +31,7 @@ Now we can intercept the request in burp and this is how the request looks like 
 
 Noow through `blog-post-author-display` parameter we can pass the following payload like `user.first_name}}{{7*7}}` which will actually display first name and then closes the function.. later it will executed value which is `49` 
 
-![]({{ site.baseurl }}/assets/images/ssti/ssti-7.png)
+![]({{ site.baseurl }}/assets/images/ssti/ssti-8.png)
 
 And that confirms, that's an SSTI right 
 
@@ -45,4 +45,4 @@ which will use os library and executes the system command here to delete the fil
 
 Refresh the blog post and that solves the lab 
 
-![]({{ site.baseurl }}/assets/images/ssti/ssti-8.png)
+![]({{ site.baseurl }}/assets/images/ssti/ssti-9.png)
