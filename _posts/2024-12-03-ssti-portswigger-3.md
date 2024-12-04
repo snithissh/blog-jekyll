@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic server-side template injection (code context)"
+title:  "Server-side template injection using documentation"
 date:   2024-12-03 10:20:54 +0530
 categories: [BSCP, SSTI]
 ---
