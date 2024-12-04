@@ -22,7 +22,7 @@ In this lab, we do have a search functionality and looking into the source of th
 
   
 
-After doing R&D about this specific XSS with an angular bracket and for example, In the search field entering the following payload `{{1 + 1}}` results in `2`⁠
+After doing R&D about this specific XSS with an angular bracket and for example, In the search field entering the following payload **{{1 + 1}}** results in `2`⁠
 
   
 
