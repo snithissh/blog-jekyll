@@ -28,7 +28,7 @@ But when we replace the `&xxe` entity with the actual `productId` which is `1` w
 
 ![]({{ site.baseurl }}/assets/images/xxe/xxe-19.png)
 
-Now in order to bypass we can use xml entity parameter, where we can able to reference it with in the DTD.. Firstly it's referenced in percent character before the entity name and referenced else where inside the DTD with `%xxe;` instead of `&xxe;`
+Now in order to bypass we can use xml entity parameter, where we can able to reference it with in the DTD.. Firstly it's referenced in percent character before the entity name and referenced else where inside the DTD with `%xxe;` instead of `&xxe;` 
 
 Just combining all together with the following payload 
 
